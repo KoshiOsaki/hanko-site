@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Installation and first-use guide for HANKO: Client Approvals.">
+<title>How to use HANKO: Client Approvals</title>
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--fg:#1d1d1f;--mute:#62626a;--line:#e3e3e0;--acc:#0b57d0;--acc-bg:#e8f0fe;--warn-bg:#fdf1dc;--warn:#8a5200}
+@media (prefers-color-scheme:dark){:root{--bg:#151517;--card:#1f1f22;--fg:#ececee;--mute:#a0a0a8;--line:#333338;--acc:#8fb0ff;--acc-bg:#1e2a4a;--warn-bg:#3a2c12;--warn:#f0c070}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:860px;margin:0 auto;padding:32px 16px 72px}
+header.top{max-width:860px;margin:0 auto;padding:16px 16px 0;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;font-size:14px}
+header.top b{margin-right:auto;font-size:16px}
+a{color:var(--acc)}
+h1{font-size:32px;line-height:1.25;margin:8px 0 8px}
+h2{font-size:21px;margin:40px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h3{font-size:17px;margin:22px 0 4px}
+.lead{color:var(--mute);font-size:18px;margin:0 0 20px}
+.meta{color:var(--mute);font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.grid .card{margin:0}.grid h3{margin-top:0}.grid p{margin:0;color:var(--mute);font-size:15px}
+figure{margin:16px 0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+figure img{display:block;width:100%;height:auto;border-bottom:1px solid var(--line)}
+figure.phone img{max-width:420px;margin:0 auto}
+figcaption{padding:10px 14px;font-size:14px;color:var(--mute)}
+ul,ol{padding-left:22px}li{margin:4px 0}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--mute)}
+.note{background:var(--warn-bg);color:var(--warn);border-radius:8px;padding:10px 14px;font-size:15px;margin:14px 0}
+.cta{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;padding:10px 18px;border-radius:8px;font-weight:600}
+@media (prefers-color-scheme:dark){.cta{color:#10131a}}
+footer{max-width:860px;margin:0 auto;padding:0 16px 40px;color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+
+<main>
+
+<h1>How to use HANKO: Client Approvals</h1>
+<p class="lead">From installation to your first approved item in about five minutes.</p>
+
+<h2>Prerequisites</h2>
+<ul>
+<li>A monday.com account. Installing the app requires an account admin.</li>
+<li>A board with an item you want approved and a <b>Status</b> column that will show the result.</li>
+<li>Optional: a <b>Files</b> column with the deliverables you want your client to see.</li>
+</ul>
+
+<h2>1. Install the app</h2>
+<p>Open the monday.com marketplace, find <b>HANKO: Client Approvals</b>, and click <b>Add to your account</b>. Approve the permissions it requests: read and write board data (to read the item and update its status) and post updates.</p>
+
+<h2>2. Add the view to a board</h2>
+<p>Open your board, click <b>+</b> next to the existing views, and add <b>Client approvals</b>. The view lists every request created on this board and shows how many of your monthly free requests you have used.</p>
+<figure class=""><img src="img/01-requests.png" alt="The Client approvals view. Each request shows its status: Waiting, Approved or Changes requested." loading="lazy"><figcaption>The Client approvals view. Each request shows its status: Waiting, Approved or Changes requested.</figcaption></figure>
+
+<h2>3. Configure the result (first time only)</h2>
+<p>Open <b>Settings</b> in the view and choose:</p>
+<ul>
+<li><b>Status column</b> to update when your client responds.</li>
+<li><b>Labels</b> for approved and changes requested. They must match the labels in your column <b>exactly</b>.</li>
+<li><b>Brand name and accent color</b> shown on the client page.</li>
+<li><b>Default link expiry</b> in days.</li>
+</ul>
+<figure class=""><img src="img/04-settings.png" alt="Settings: result column, labels, branding and default expiry." loading="lazy"><figcaption>Settings: result column, labels, branding and default expiry.</figcaption></figure>
+<div class="note">If no status column is configured, responses are still saved but the board cannot be updated, and the app tells you that setup is needed.</div>
+
+<h2>4. Create an approval request</h2>
+<p>Click <b>New request</b>. Choose the item, enter a name for the recipient (for example the client's company), add an optional message, tick the files to include, and set the expiry.</p>
+<figure class=""><img src="img/02-new-request.png" alt="New request: item, recipient name, message, files and expiry." loading="lazy"><figcaption>New request: item, recipient name, message, files and expiry.</figcaption></figure>
+
+<h2>5. Share the link</h2>
+<p>Copy the generated link and send it to your client yourself, for example by email or chat. The app does not send emails.</p>
+<figure class=""><img src="img/03-share-link.png" alt="The share link, ready to copy." loading="lazy"><figcaption>The share link, ready to copy.</figcaption></figure>
+<div class="note">Anyone who has the link can answer, so ask your client not to forward it.</div>
+
+<h2>6. Your client responds</h2>
+<p>The client opens the link on any device, with no sign-in. They review your message and files, then choose <b>Approve</b> or <b>Request changes</b>. Requesting changes requires a comment. A request can be answered once. If changes are needed, create a new request after updating the work.</p>
+<figure class="phone"><img src="img/06-client-page.png" alt="The client page on a phone." loading="lazy"><figcaption>The client page on a phone.</figcaption></figure>
+
+<h2>7. See the result on your board</h2>
+<p>The status column changes to your chosen label, and an update is added to the item, for example "Approved by Acme Coffee (via shared link)". For changes requested, the client's comment is included. Use the normal monday.com notifications to be alerted.</p>
+<figure class=""><img src="img/09-board-after.png" alt="The board after the client approved." loading="lazy"><figcaption>The board after the client approved.</figcaption></figure>
+
+<h2>Managing requests</h2>
+<ul>
+<li><b>Copy link again</b> or <b>Withdraw</b> a request from the view while it is waiting. A withdrawn or expired link shows no content.</li>
+<li>Changes requested comments are visible in the request list.</li>
+</ul>
+
+<h2>Plans and limits</h2>
+<ul>
+<li>Free: up to 10 new requests per month. When the limit is reached, creating new requests is paused; links you already issued keep working.</li>
+<li>Paid: unlimited requests.</li>
+<li>Cancelling a paid plan stops paid features but keeps your saved data.</li>
+</ul>
+
+<h2>Uninstalling</h2>
+<p>When an account admin uninstalls the app, all requests, settings and the stored authorization for that account are deleted, and previously issued links stop working.</p>
+
+<h2>Need help?</h2>
+<p>Email <b>k.osaki@dokokichi.com</b>. We reply within 2 business days.</p>
+
+</main>
+
+</body>
+</html>
